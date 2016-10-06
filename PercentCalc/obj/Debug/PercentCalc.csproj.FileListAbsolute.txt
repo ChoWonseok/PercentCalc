@@ -1,0 +1,9 @@
+D:\Programing\vs\PercentCalc\PercentCalc\bin\Debug\PercentCalc.exe.config
+D:\Programing\vs\PercentCalc\PercentCalc\bin\Debug\PercentCalc.exe
+D:\Programing\vs\PercentCalc\PercentCalc\bin\Debug\PercentCalc.pdb
+D:\Programing\vs\PercentCalc\PercentCalc\obj\Debug\PercentCalc.csprojResolveAssemblyReference.cache
+D:\Programing\vs\PercentCalc\PercentCalc\obj\Debug\PercentCalc.퍼센트계산기.resources
+D:\Programing\vs\PercentCalc\PercentCalc\obj\Debug\PercentCalc.Properties.Resources.resources
+D:\Programing\vs\PercentCalc\PercentCalc\obj\Debug\PercentCalc.csproj.GenerateResource.Cache
+D:\Programing\vs\PercentCalc\PercentCalc\obj\Debug\PercentCalc.exe
+D:\Programing\vs\PercentCalc\PercentCalc\obj\Debug\PercentCalc.pdb
