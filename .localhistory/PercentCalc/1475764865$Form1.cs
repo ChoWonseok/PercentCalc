@@ -56,12 +56,13 @@ namespace PercentCalc
 
             if(iTotalWidth > 0 && iTotalHeight > 0)
             {
-                iResultData = (float)iWidth / (float)iTotalWidth;
+                iResultData = (float)iTotalWidth / (float)iWidth;
             }
 
-            widthCal.Text = iResultData.ToString();
-            widthPercent.Text = (iResultData * 100).ToString();
-            
+            widthCal.Text = iResultData.ToString;
+
+
+
         }
 
         private int digitValidation(string str)

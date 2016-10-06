@@ -56,7 +56,7 @@ namespace PercentCalc
 
             if(iTotalWidth > 0 && iTotalHeight > 0)
             {
-                iResultData = (float)iWidth / (float)iTotalWidth;
+                iResultData = (float)iTotalWidth / (float)iWidth;
             }
 
             widthCal.Text = iResultData.ToString();

@@ -227,7 +227,6 @@
             this.C1.TabIndex = 8;
             this.C1.Text = "C";
             this.C1.UseVisualStyleBackColor = true;
-            this.C1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.c1_calc);
             // 
             // left
             // 

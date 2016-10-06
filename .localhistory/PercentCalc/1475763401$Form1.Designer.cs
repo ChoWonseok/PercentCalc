@@ -94,7 +94,6 @@
             this.totalWidth.Name = "totalWidth";
             this.totalWidth.Size = new System.Drawing.Size(155, 21);
             this.totalWidth.TabIndex = 1;
-            this.totalWidth.TextChanged += new System.EventHandler(this.totalWidth_TextChanged);
             this.totalWidth.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlyDigitKeyPress);
             // 
             // TotalWidthLabel
@@ -227,7 +226,6 @@
             this.C1.TabIndex = 8;
             this.C1.Text = "C";
             this.C1.UseVisualStyleBackColor = true;
-            this.C1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.c1_calc);
             // 
             // left
             // 
@@ -306,7 +304,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.기본값설정);
             this.Name = "퍼센트계산기";
-            this.Text = "퍼센트계산기 v0.1";
+            this.Text = "퍼센트계산기";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.기본값설정.ResumeLayout(false);
             this.기본값설정.PerformLayout();

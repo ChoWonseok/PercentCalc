@@ -47,31 +47,7 @@ namespace PercentCalc
 
         private void c1_calc(object sender, MouseEventArgs e)
         {
-
-            int iTotalWidth = digitValidation(totalWidth.Text);
-            int iTotalHeight = digitValidation(totalHeight.Text);
-            int iWidth = digitValidation(width.Text);
-
-            float iResultData = 0;
-
-            if(iTotalWidth > 0 && iTotalHeight > 0)
-            {
-                iResultData = (float)iWidth / (float)iTotalWidth;
-            }
-
-            widthCal.Text = iResultData.ToString();
-            widthPercent.Text = (iResultData * 100).ToString();
             
-        }
-
-        private int digitValidation(string str)
-        {
-            int iTemp = 0;
-            if(str != "")
-            {
-                iTemp = int.Parse(str);
-            }
-            return iTemp;
         }
     }
 }
