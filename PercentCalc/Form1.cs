@@ -22,11 +22,6 @@ namespace PercentCalc
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
@@ -35,6 +30,14 @@ namespace PercentCalc
         private void textBox6_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void onlyDigitKeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(!(char.IsDigit(e.KeyChar) || e.KeyChar == Convert.ToChar(Keys.Back) || e.KeyChar == '-'))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

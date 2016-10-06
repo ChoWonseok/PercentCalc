@@ -29,31 +29,31 @@
         private void InitializeComponent()
         {
             this.기본값설정 = new System.Windows.Forms.GroupBox();
-            this.TotalWidthLabel = new System.Windows.Forms.Label();
-            this.totalWidth = new System.Windows.Forms.TextBox();
-            this.TotalHeightLabel = new System.Windows.Forms.Label();
             this.totalHeight = new System.Windows.Forms.TextBox();
+            this.TotalHeightLabel = new System.Windows.Forms.Label();
+            this.totalWidth = new System.Windows.Forms.TextBox();
+            this.TotalWidthLabel = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.width = new System.Windows.Forms.TextBox();
-            this.height = new System.Windows.Forms.TextBox();
-            this.top = new System.Windows.Forms.TextBox();
-            this.left = new System.Windows.Forms.TextBox();
-            this.C1 = new System.Windows.Forms.Button();
-            this.C2 = new System.Windows.Forms.Button();
-            this.C3 = new System.Windows.Forms.Button();
-            this.C4 = new System.Windows.Forms.Button();
-            this.widthCal = new System.Windows.Forms.TextBox();
-            this.heightCal = new System.Windows.Forms.TextBox();
-            this.topCal = new System.Windows.Forms.TextBox();
-            this.leftCal = new System.Windows.Forms.TextBox();
-            this.widthPercent = new System.Windows.Forms.TextBox();
-            this.heightpercent = new System.Windows.Forms.TextBox();
-            this.topPercent = new System.Windows.Forms.TextBox();
             this.leftPercent = new System.Windows.Forms.TextBox();
+            this.topPercent = new System.Windows.Forms.TextBox();
+            this.heightpercent = new System.Windows.Forms.TextBox();
+            this.widthPercent = new System.Windows.Forms.TextBox();
+            this.leftCal = new System.Windows.Forms.TextBox();
+            this.topCal = new System.Windows.Forms.TextBox();
+            this.heightCal = new System.Windows.Forms.TextBox();
+            this.widthCal = new System.Windows.Forms.TextBox();
+            this.C4 = new System.Windows.Forms.Button();
+            this.C3 = new System.Windows.Forms.Button();
+            this.C2 = new System.Windows.Forms.Button();
+            this.C1 = new System.Windows.Forms.Button();
+            this.left = new System.Windows.Forms.TextBox();
+            this.top = new System.Windows.Forms.TextBox();
+            this.height = new System.Windows.Forms.TextBox();
+            this.width = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.기본값설정.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -71,22 +71,13 @@
             this.기본값설정.TabStop = false;
             this.기본값설정.Text = "기본값설정";
             // 
-            // TotalWidthLabel
+            // totalHeight
             // 
-            this.TotalWidthLabel.AutoSize = true;
-            this.TotalWidthLabel.Location = new System.Drawing.Point(19, 23);
-            this.TotalWidthLabel.Name = "TotalWidthLabel";
-            this.TotalWidthLabel.Size = new System.Drawing.Size(62, 12);
-            this.TotalWidthLabel.TabIndex = 0;
-            this.TotalWidthLabel.Text = "WIDTH   : ";
-            // 
-            // totalWidth
-            // 
-            this.totalWidth.Location = new System.Drawing.Point(90, 20);
-            this.totalWidth.Name = "totalWidth";
-            this.totalWidth.Size = new System.Drawing.Size(155, 21);
-            this.totalWidth.TabIndex = 1;
-            this.totalWidth.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.totalHeight.Location = new System.Drawing.Point(90, 47);
+            this.totalHeight.Name = "totalHeight";
+            this.totalHeight.Size = new System.Drawing.Size(155, 21);
+            this.totalHeight.TabIndex = 3;
+            this.totalHeight.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlyDigitKeyPress);
             // 
             // TotalHeightLabel
             // 
@@ -97,12 +88,22 @@
             this.TotalHeightLabel.TabIndex = 2;
             this.TotalHeightLabel.Text = "HEIGHT : ";
             // 
-            // totalHeight
+            // totalWidth
             // 
-            this.totalHeight.Location = new System.Drawing.Point(90, 47);
-            this.totalHeight.Name = "totalHeight";
-            this.totalHeight.Size = new System.Drawing.Size(155, 21);
-            this.totalHeight.TabIndex = 3;
+            this.totalWidth.Location = new System.Drawing.Point(90, 20);
+            this.totalWidth.Name = "totalWidth";
+            this.totalWidth.Size = new System.Drawing.Size(155, 21);
+            this.totalWidth.TabIndex = 1;
+            this.totalWidth.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlyDigitKeyPress);
+            // 
+            // TotalWidthLabel
+            // 
+            this.TotalWidthLabel.AutoSize = true;
+            this.TotalWidthLabel.Location = new System.Drawing.Point(19, 23);
+            this.TotalWidthLabel.Name = "TotalWidthLabel";
+            this.TotalWidthLabel.Size = new System.Drawing.Size(62, 12);
+            this.TotalWidthLabel.TabIndex = 0;
+            this.TotalWidthLabel.Text = "WIDTH   : ";
             // 
             // groupBox1
             // 
@@ -134,97 +135,61 @@
             this.groupBox1.Text = "groupBox1";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // label2
+            // leftPercent
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(19, 36);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 12);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "width  :";
+            this.leftPercent.Location = new System.Drawing.Point(302, 114);
+            this.leftPercent.Name = "leftPercent";
+            this.leftPercent.Size = new System.Drawing.Size(89, 21);
+            this.leftPercent.TabIndex = 19;
             // 
-            // label3
+            // topPercent
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(17, 63);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(51, 12);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "height : ";
+            this.topPercent.Location = new System.Drawing.Point(302, 88);
+            this.topPercent.Name = "topPercent";
+            this.topPercent.Size = new System.Drawing.Size(89, 21);
+            this.topPercent.TabIndex = 18;
             // 
-            // label4
+            // heightpercent
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(19, 90);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(46, 12);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "top     :";
+            this.heightpercent.Location = new System.Drawing.Point(302, 58);
+            this.heightpercent.Name = "heightpercent";
+            this.heightpercent.Size = new System.Drawing.Size(89, 21);
+            this.heightpercent.TabIndex = 17;
             // 
-            // label5
+            // widthPercent
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(19, 117);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(49, 12);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "left     : ";
+            this.widthPercent.Location = new System.Drawing.Point(302, 32);
+            this.widthPercent.Name = "widthPercent";
+            this.widthPercent.Size = new System.Drawing.Size(89, 21);
+            this.widthPercent.TabIndex = 16;
             // 
-            // width
+            // leftCal
             // 
-            this.width.Location = new System.Drawing.Point(71, 33);
-            this.width.Name = "width";
-            this.width.Size = new System.Drawing.Size(100, 21);
-            this.width.TabIndex = 4;
+            this.leftCal.Location = new System.Drawing.Point(207, 113);
+            this.leftCal.Name = "leftCal";
+            this.leftCal.Size = new System.Drawing.Size(89, 21);
+            this.leftCal.TabIndex = 15;
             // 
-            // height
+            // topCal
             // 
-            this.height.Location = new System.Drawing.Point(71, 60);
-            this.height.Name = "height";
-            this.height.Size = new System.Drawing.Size(99, 21);
-            this.height.TabIndex = 5;
+            this.topCal.Location = new System.Drawing.Point(207, 86);
+            this.topCal.Name = "topCal";
+            this.topCal.Size = new System.Drawing.Size(89, 21);
+            this.topCal.TabIndex = 14;
             // 
-            // top
+            // heightCal
             // 
-            this.top.Location = new System.Drawing.Point(71, 87);
-            this.top.Name = "top";
-            this.top.Size = new System.Drawing.Size(100, 21);
-            this.top.TabIndex = 6;
+            this.heightCal.Location = new System.Drawing.Point(207, 59);
+            this.heightCal.Name = "heightCal";
+            this.heightCal.Size = new System.Drawing.Size(89, 21);
+            this.heightCal.TabIndex = 13;
             // 
-            // left
+            // widthCal
             // 
-            this.left.Location = new System.Drawing.Point(71, 114);
-            this.left.Name = "left";
-            this.left.Size = new System.Drawing.Size(99, 21);
-            this.left.TabIndex = 7;
-            this.left.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
-            // 
-            // C1
-            // 
-            this.C1.Location = new System.Drawing.Point(177, 32);
-            this.C1.Name = "C1";
-            this.C1.Size = new System.Drawing.Size(25, 21);
-            this.C1.TabIndex = 8;
-            this.C1.Text = "C";
-            this.C1.UseVisualStyleBackColor = true;
-            // 
-            // C2
-            // 
-            this.C2.Location = new System.Drawing.Point(176, 59);
-            this.C2.Name = "C2";
-            this.C2.Size = new System.Drawing.Size(25, 21);
-            this.C2.TabIndex = 9;
-            this.C2.Text = "C";
-            this.C2.UseVisualStyleBackColor = true;
-            // 
-            // C3
-            // 
-            this.C3.Location = new System.Drawing.Point(176, 87);
-            this.C3.Name = "C3";
-            this.C3.Size = new System.Drawing.Size(25, 21);
-            this.C3.TabIndex = 10;
-            this.C3.Text = "C";
-            this.C3.UseVisualStyleBackColor = true;
+            this.widthCal.Location = new System.Drawing.Point(207, 32);
+            this.widthCal.Name = "widthCal";
+            this.widthCal.Size = new System.Drawing.Size(89, 21);
+            this.widthCal.TabIndex = 12;
             // 
             // C4
             // 
@@ -235,61 +200,101 @@
             this.C4.Text = "C";
             this.C4.UseVisualStyleBackColor = true;
             // 
-            // widthCal
+            // C3
             // 
-            this.widthCal.Location = new System.Drawing.Point(207, 32);
-            this.widthCal.Name = "widthCal";
-            this.widthCal.Size = new System.Drawing.Size(89, 21);
-            this.widthCal.TabIndex = 12;
+            this.C3.Location = new System.Drawing.Point(176, 87);
+            this.C3.Name = "C3";
+            this.C3.Size = new System.Drawing.Size(25, 21);
+            this.C3.TabIndex = 10;
+            this.C3.Text = "C";
+            this.C3.UseVisualStyleBackColor = true;
             // 
-            // heightCal
+            // C2
             // 
-            this.heightCal.Location = new System.Drawing.Point(207, 59);
-            this.heightCal.Name = "heightCal";
-            this.heightCal.Size = new System.Drawing.Size(89, 21);
-            this.heightCal.TabIndex = 13;
+            this.C2.Location = new System.Drawing.Point(176, 59);
+            this.C2.Name = "C2";
+            this.C2.Size = new System.Drawing.Size(25, 21);
+            this.C2.TabIndex = 9;
+            this.C2.Text = "C";
+            this.C2.UseVisualStyleBackColor = true;
             // 
-            // topCal
+            // C1
             // 
-            this.topCal.Location = new System.Drawing.Point(207, 86);
-            this.topCal.Name = "topCal";
-            this.topCal.Size = new System.Drawing.Size(89, 21);
-            this.topCal.TabIndex = 14;
+            this.C1.Location = new System.Drawing.Point(177, 32);
+            this.C1.Name = "C1";
+            this.C1.Size = new System.Drawing.Size(25, 21);
+            this.C1.TabIndex = 8;
+            this.C1.Text = "C";
+            this.C1.UseVisualStyleBackColor = true;
             // 
-            // leftCal
+            // left
             // 
-            this.leftCal.Location = new System.Drawing.Point(207, 113);
-            this.leftCal.Name = "leftCal";
-            this.leftCal.Size = new System.Drawing.Size(89, 21);
-            this.leftCal.TabIndex = 15;
+            this.left.Location = new System.Drawing.Point(71, 114);
+            this.left.Name = "left";
+            this.left.Size = new System.Drawing.Size(99, 21);
+            this.left.TabIndex = 7;
+            this.left.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            this.left.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlyDigitKeyPress);
             // 
-            // widthPercent
+            // top
             // 
-            this.widthPercent.Location = new System.Drawing.Point(302, 32);
-            this.widthPercent.Name = "widthPercent";
-            this.widthPercent.Size = new System.Drawing.Size(89, 21);
-            this.widthPercent.TabIndex = 16;
+            this.top.Location = new System.Drawing.Point(71, 87);
+            this.top.Name = "top";
+            this.top.Size = new System.Drawing.Size(100, 21);
+            this.top.TabIndex = 6;
+            this.top.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlyDigitKeyPress);
             // 
-            // heightpercent
+            // height
             // 
-            this.heightpercent.Location = new System.Drawing.Point(302, 58);
-            this.heightpercent.Name = "heightpercent";
-            this.heightpercent.Size = new System.Drawing.Size(89, 21);
-            this.heightpercent.TabIndex = 17;
+            this.height.Location = new System.Drawing.Point(71, 60);
+            this.height.Name = "height";
+            this.height.Size = new System.Drawing.Size(99, 21);
+            this.height.TabIndex = 5;
+            this.height.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlyDigitKeyPress);
             // 
-            // topPercent
+            // width
             // 
-            this.topPercent.Location = new System.Drawing.Point(302, 88);
-            this.topPercent.Name = "topPercent";
-            this.topPercent.Size = new System.Drawing.Size(89, 21);
-            this.topPercent.TabIndex = 18;
+            this.width.Location = new System.Drawing.Point(71, 33);
+            this.width.Name = "width";
+            this.width.Size = new System.Drawing.Size(100, 21);
+            this.width.TabIndex = 4;
+            this.width.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlyDigitKeyPress);
             // 
-            // leftPercent
+            // label5
             // 
-            this.leftPercent.Location = new System.Drawing.Point(302, 114);
-            this.leftPercent.Name = "leftPercent";
-            this.leftPercent.Size = new System.Drawing.Size(89, 21);
-            this.leftPercent.TabIndex = 19;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(19, 117);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(49, 12);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "left     : ";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(19, 90);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(46, 12);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "top     :";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(17, 63);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(51, 12);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "height : ";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(19, 36);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(47, 12);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "width  :";
             // 
             // 퍼센트계산기
             // 
