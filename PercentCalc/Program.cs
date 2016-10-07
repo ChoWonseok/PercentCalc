@@ -16,7 +16,7 @@ namespace PercentCalc
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new 퍼센트계산기());
+            Application.Run(new PercentCalc());
         }
     }
 }

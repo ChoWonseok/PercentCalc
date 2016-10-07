@@ -139,8 +139,7 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "좌표값";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
-            // 
+                        // 
             // leftPercent
             // 
             this.leftPercent.Location = new System.Drawing.Point(302, 114);
@@ -242,8 +241,7 @@
             this.left.Location = new System.Drawing.Point(71, 114);
             this.left.Name = "left";
             this.left.Size = new System.Drawing.Size(99, 21);
-            this.left.TabIndex = 7;
-            this.left.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            this.left.TabIndex = 7;            
             this.left.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlyDigitKeyPress);
             // 
             // top
