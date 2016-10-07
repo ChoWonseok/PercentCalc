@@ -40,30 +40,20 @@ namespace PercentCalc
             }
         }
 
-        private void totalWidth_TextChanged(object sender, EventArgs e)
+        private float[] calcPercent(float numerator, float denominator)
         {
+            float[] result = { 0, 0 };
 
-        }
-
-        private void c1_calc(object sender, MouseEventArgs e)
-        {
-
-            int iTotalWidth = digitValidation(totalWidth.Text);
-            int iTotalHeight = digitValidation(totalHeight.Text);
-            int iWidth = digitValidation(width.Text);
-
-            float iResultData = 0;
-
-            if(iTotalWidth > 0 && iTotalHeight > 0)
+            if (numerator > 0 && denominator > 0)
             {
-                iResultData = (float)iWidth / (float)iTotalWidth;
+                result[0] = numerator / denominator;
+                result[1] = (numerator / denominator) * 100;
             }
-
-            widthCal.Text = iResultData.ToString();
-            widthPercent.Text = (iResultData * 100).ToString();
             
+            return result;            
         }
-
+         
+        
         private int digitValidation(string str)
         {
             int iTemp = 0;
@@ -72,6 +62,95 @@ namespace PercentCalc
                 iTemp = int.Parse(str);
             }
             return iTemp;
+        }
+
+        private String makeTag()
+        {
+            String strWidthPercent = widthPercent.Text;
+            String strHeightPercent = heightPercent.Text;
+            String strTopPercent = topPercent.Text;
+            String strLeftPercent = leftPercent.Text;
+
+            String strTag = "width:" + strWidthPercent + "%; height:" + strHeightPercent + "%; top: " + strTopPercent + "%; left:" + strLeftPercent + "%";
+
+            return strTag;
+        }
+
+        private void c1_calc(object sender, MouseEventArgs e)
+        {
+            int iTotalWidth = digitValidation(totalWidth.Text);
+            int iWidth = digitValidation(width.Text);
+
+            float[] iResultData = { 0, 0 };
+
+            iResultData = calcPercent(iWidth, iTotalWidth);
+
+            if (iResultData[0] > 0 && iResultData[1] > 0)
+            {
+                widthCal.Text = iResultData[0].ToString();
+                widthPercent.Text = iResultData[1].ToString();
+            }
+        }
+
+        private void c2_calc(object sender, EventArgs e)
+        {
+            int iTotalHeight = digitValidation(totalHeight.Text);
+            int iHeight = digitValidation(height.Text);
+
+            float[] iResultData = { 0, 0 };
+
+            iResultData = calcPercent(iHeight, iTotalHeight);
+
+            if (iResultData[0] > 0 && iResultData[1] > 0)
+            {
+                heightCal.Text = iResultData[0].ToString();
+                heightPercent.Text = iResultData[1].ToString();
+            }
+        }
+
+        private void c3_calc(object sender, EventArgs e)
+        {
+            int iTotalHeight = digitValidation(totalHeight.Text);
+            int iTop = digitValidation(top.Text);
+
+            float[] iResultData = { 0, 0 };
+
+            iResultData = calcPercent(iTop, iTotalHeight);
+
+            if (iResultData[0] > 0 && iResultData[1] > 0)
+            {
+                topCal.Text = iResultData[0].ToString();
+                topPercent.Text = iResultData[1].ToString();
+            }
+        }
+
+        private void c4_calc(object sender, EventArgs e)
+        {
+            int iTotalWidth = digitValidation(totalWidth.Text);
+            int iLeft = digitValidation(left.Text);
+
+            float[] iResultData = { 0, 0 };
+
+            iResultData = calcPercent(iLeft, iTotalWidth);
+
+            if (iResultData[0] > 0 && iResultData[1] > 0)
+            {
+                leftCal.Text = iResultData[0].ToString();
+                leftPercent.Text = iResultData[1].ToString();
+            }
+        }
+
+        private void makeTagBtn_click(object sender, EventArgs e)
+        {
+
+            tagSource.Text = makeTag();
+        }
+
+        private void tagCopyBtn_click(object sender, EventArgs e)
+        {
+            String strTag = makeTag();
+            if(strTag != "") Clipboard.SetText(makeTag());
+
         }
     }
 }

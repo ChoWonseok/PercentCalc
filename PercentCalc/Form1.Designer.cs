@@ -36,7 +36,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.leftPercent = new System.Windows.Forms.TextBox();
             this.topPercent = new System.Windows.Forms.TextBox();
-            this.heightpercent = new System.Windows.Forms.TextBox();
+            this.heightPercent = new System.Windows.Forms.TextBox();
             this.widthPercent = new System.Windows.Forms.TextBox();
             this.leftCal = new System.Windows.Forms.TextBox();
             this.topCal = new System.Windows.Forms.TextBox();
@@ -54,8 +54,13 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.makeTagBtn = new System.Windows.Forms.Button();
+            this.tagSource = new System.Windows.Forms.TextBox();
+            this.tagCopyBtn = new System.Windows.Forms.Button();
             this.기본값설정.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // 기본값설정
@@ -94,7 +99,6 @@
             this.totalWidth.Name = "totalWidth";
             this.totalWidth.Size = new System.Drawing.Size(155, 21);
             this.totalWidth.TabIndex = 1;
-            this.totalWidth.TextChanged += new System.EventHandler(this.totalWidth_TextChanged);
             this.totalWidth.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlyDigitKeyPress);
             // 
             // TotalWidthLabel
@@ -110,7 +114,7 @@
             // 
             this.groupBox1.Controls.Add(this.leftPercent);
             this.groupBox1.Controls.Add(this.topPercent);
-            this.groupBox1.Controls.Add(this.heightpercent);
+            this.groupBox1.Controls.Add(this.heightPercent);
             this.groupBox1.Controls.Add(this.widthPercent);
             this.groupBox1.Controls.Add(this.leftCal);
             this.groupBox1.Controls.Add(this.topCal);
@@ -133,7 +137,7 @@
             this.groupBox1.Size = new System.Drawing.Size(402, 159);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.groupBox1.Text = "좌표값";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // leftPercent
@@ -150,12 +154,12 @@
             this.topPercent.Size = new System.Drawing.Size(89, 21);
             this.topPercent.TabIndex = 18;
             // 
-            // heightpercent
+            // heightPercent
             // 
-            this.heightpercent.Location = new System.Drawing.Point(302, 58);
-            this.heightpercent.Name = "heightpercent";
-            this.heightpercent.Size = new System.Drawing.Size(89, 21);
-            this.heightpercent.TabIndex = 17;
+            this.heightPercent.Location = new System.Drawing.Point(302, 58);
+            this.heightPercent.Name = "heightPercent";
+            this.heightPercent.Size = new System.Drawing.Size(89, 21);
+            this.heightPercent.TabIndex = 17;
             // 
             // widthPercent
             // 
@@ -200,6 +204,7 @@
             this.C4.TabIndex = 11;
             this.C4.Text = "C";
             this.C4.UseVisualStyleBackColor = true;
+            this.C4.Click += new System.EventHandler(this.c4_calc);
             // 
             // C3
             // 
@@ -209,6 +214,7 @@
             this.C3.TabIndex = 10;
             this.C3.Text = "C";
             this.C3.UseVisualStyleBackColor = true;
+            this.C3.Click += new System.EventHandler(this.c3_calc);
             // 
             // C2
             // 
@@ -218,6 +224,7 @@
             this.C2.TabIndex = 9;
             this.C2.Text = "C";
             this.C2.UseVisualStyleBackColor = true;
+            this.C2.Click += new System.EventHandler(this.c2_calc);
             // 
             // C1
             // 
@@ -298,11 +305,51 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "width  :";
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.tagCopyBtn);
+            this.groupBox2.Controls.Add(this.tagSource);
+            this.groupBox2.Controls.Add(this.makeTagBtn);
+            this.groupBox2.Location = new System.Drawing.Point(8, 265);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(398, 65);
+            this.groupBox2.TabIndex = 2;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "테그생성";
+            // 
+            // makeTagBtn
+            // 
+            this.makeTagBtn.Location = new System.Drawing.Point(7, 26);
+            this.makeTagBtn.Name = "makeTagBtn";
+            this.makeTagBtn.Size = new System.Drawing.Size(71, 21);
+            this.makeTagBtn.TabIndex = 0;
+            this.makeTagBtn.Text = "테그생성";
+            this.makeTagBtn.UseVisualStyleBackColor = true;
+            this.makeTagBtn.Click += new System.EventHandler(this.makeTagBtn_click);
+            // 
+            // tagSource
+            // 
+            this.tagSource.Location = new System.Drawing.Point(84, 26);
+            this.tagSource.Name = "tagSource";
+            this.tagSource.Size = new System.Drawing.Size(245, 21);
+            this.tagSource.TabIndex = 1;
+            // 
+            // tagCopyBtn
+            // 
+            this.tagCopyBtn.Location = new System.Drawing.Point(340, 26);
+            this.tagCopyBtn.Name = "tagCopyBtn";
+            this.tagCopyBtn.Size = new System.Drawing.Size(52, 21);
+            this.tagCopyBtn.TabIndex = 2;
+            this.tagCopyBtn.Text = "복사";
+            this.tagCopyBtn.UseVisualStyleBackColor = true;
+            this.tagCopyBtn.Click += new System.EventHandler(this.tagCopyBtn_click);
+            // 
             // 퍼센트계산기
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(413, 271);
+            this.ClientSize = new System.Drawing.Size(413, 337);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.기본값설정);
             this.Name = "퍼센트계산기";
@@ -312,6 +359,8 @@
             this.기본값설정.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -338,12 +387,16 @@
         private System.Windows.Forms.Button C1;
         private System.Windows.Forms.TextBox leftPercent;
         private System.Windows.Forms.TextBox topPercent;
-        private System.Windows.Forms.TextBox heightpercent;
+        private System.Windows.Forms.TextBox heightPercent;
         private System.Windows.Forms.TextBox widthPercent;
         private System.Windows.Forms.TextBox leftCal;
         private System.Windows.Forms.TextBox topCal;
         private System.Windows.Forms.TextBox heightCal;
         private System.Windows.Forms.TextBox widthCal;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button tagCopyBtn;
+        private System.Windows.Forms.TextBox tagSource;
+        private System.Windows.Forms.Button makeTagBtn;
     }
 }
 
