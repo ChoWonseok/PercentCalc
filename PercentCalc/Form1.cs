@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PercentCalc
 {
-    public partial class 퍼센트계산기 : Form
+    public partial class PercentCalc : Form
     {
-        public 퍼센트계산기()
+        public PercentCalc()
         {
             InitializeComponent();
         }

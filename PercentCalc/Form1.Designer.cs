@@ -1,6 +1,6 @@
 ﻿namespace PercentCalc
 {
-    partial class 퍼센트계산기
+    partial class PercentCalc
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(퍼센트계산기));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PercentCalc));
             this.기본값설정 = new System.Windows.Forms.GroupBox();
             this.totalHeight = new System.Windows.Forms.TextBox();
             this.TotalHeightLabel = new System.Windows.Forms.Label();
@@ -56,9 +56,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.makeTagBtn = new System.Windows.Forms.Button();
-            this.tagSource = new System.Windows.Forms.TextBox();
             this.tagCopyBtn = new System.Windows.Forms.Button();
+            this.tagSource = new System.Windows.Forms.TextBox();
+            this.makeTagBtn = new System.Windows.Forms.Button();
             this.기본값설정.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -318,23 +318,6 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "테그생성";
             // 
-            // makeTagBtn
-            // 
-            this.makeTagBtn.Location = new System.Drawing.Point(7, 26);
-            this.makeTagBtn.Name = "makeTagBtn";
-            this.makeTagBtn.Size = new System.Drawing.Size(71, 21);
-            this.makeTagBtn.TabIndex = 0;
-            this.makeTagBtn.Text = "테그생성";
-            this.makeTagBtn.UseVisualStyleBackColor = true;
-            this.makeTagBtn.Click += new System.EventHandler(this.makeTagBtn_click);
-            // 
-            // tagSource
-            // 
-            this.tagSource.Location = new System.Drawing.Point(84, 26);
-            this.tagSource.Name = "tagSource";
-            this.tagSource.Size = new System.Drawing.Size(245, 21);
-            this.tagSource.TabIndex = 1;
-            // 
             // tagCopyBtn
             // 
             this.tagCopyBtn.Location = new System.Drawing.Point(340, 26);
@@ -345,7 +328,24 @@
             this.tagCopyBtn.UseVisualStyleBackColor = true;
             this.tagCopyBtn.Click += new System.EventHandler(this.tagCopyBtn_click);
             // 
-            // 퍼센트계산기
+            // tagSource
+            // 
+            this.tagSource.Location = new System.Drawing.Point(84, 26);
+            this.tagSource.Name = "tagSource";
+            this.tagSource.Size = new System.Drawing.Size(245, 21);
+            this.tagSource.TabIndex = 1;
+            // 
+            // makeTagBtn
+            // 
+            this.makeTagBtn.Location = new System.Drawing.Point(7, 26);
+            this.makeTagBtn.Name = "makeTagBtn";
+            this.makeTagBtn.Size = new System.Drawing.Size(71, 21);
+            this.makeTagBtn.TabIndex = 0;
+            this.makeTagBtn.Text = "테그생성";
+            this.makeTagBtn.UseVisualStyleBackColor = true;
+            this.makeTagBtn.Click += new System.EventHandler(this.makeTagBtn_click);
+            // 
+            // PercentCalc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -354,7 +354,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.기본값설정);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "퍼센트계산기";
+            this.Name = "PercentCalc";
             this.Text = "퍼센트계산기 v1.0";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.기본값설정.ResumeLayout(false);
