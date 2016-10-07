@@ -353,7 +353,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.기본값설정);
             this.Name = "퍼센트계산기";
-            this.Text = "퍼센트계산기 v0.1";
+            this.Text = "퍼센트계산기 v1.0";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.기본값설정.ResumeLayout(false);
             this.기본값설정.PerformLayout();
