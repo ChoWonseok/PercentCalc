@@ -25,3 +25,6 @@ D:\Programing\vs_work\PercentCalc\obj\Debug\PercentCalc.csproj.GenerateResource.
 D:\Programing\vs_work\PercentCalc\obj\Debug\PercentCalc.exe
 D:\Programing\vs_work\PercentCalc\obj\Debug\PercentCalc.pdb
 E:\source\vc\PercentCalc\PercentCalc\obj\Debug\PercentCalc.PercentCalc.resources
+D:\Programing\ricemen\PercentCalc\PercentCalc\bin\Debug\PercentCalc.exe.config
+D:\Programing\ricemen\PercentCalc\PercentCalc\obj\Debug\PercentCalc.exe
+D:\Programing\ricemen\PercentCalc\PercentCalc\obj\Debug\PercentCalc.pdb
