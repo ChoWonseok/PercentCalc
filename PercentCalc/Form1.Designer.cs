@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(퍼센트계산기));
             this.기본값설정 = new System.Windows.Forms.GroupBox();
             this.totalHeight = new System.Windows.Forms.TextBox();
             this.TotalHeightLabel = new System.Windows.Forms.Label();
@@ -352,6 +353,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.기본값설정);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "퍼센트계산기";
             this.Text = "퍼센트계산기 v1.0";
             this.Load += new System.EventHandler(this.Form1_Load);
