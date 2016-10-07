@@ -59,8 +59,6 @@
             this.tagCopyBtn = new System.Windows.Forms.Button();
             this.tagSource = new System.Windows.Forms.TextBox();
             this.makeTagBtn = new System.Windows.Forms.Button();
-            this.cipher = new System.Windows.Forms.Label();
-            this.cipherTxt = new System.Windows.Forms.TextBox();
             this.기본값설정.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -68,8 +66,6 @@
             // 
             // 기본값설정
             // 
-            this.기본값설정.Controls.Add(this.cipherTxt);
-            this.기본값설정.Controls.Add(this.cipher);
             this.기본값설정.Controls.Add(this.totalHeight);
             this.기본값설정.Controls.Add(this.TotalHeightLabel);
             this.기본값설정.Controls.Add(this.totalWidth);
@@ -241,6 +237,7 @@
             this.C1.Text = "C";
             this.C1.UseVisualStyleBackColor = true;
             this.C1.Click += new System.EventHandler(this.c1_calc);
+            this.C1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.c1_calc);
             // 
             // left
             // 
@@ -353,23 +350,6 @@
             this.makeTagBtn.UseVisualStyleBackColor = true;
             this.makeTagBtn.Click += new System.EventHandler(this.makeTagBtn_click);
             // 
-            // cipher
-            // 
-            this.cipher.AutoSize = true;
-            this.cipher.Location = new System.Drawing.Point(255, 23);
-            this.cipher.Name = "cipher";
-            this.cipher.Size = new System.Drawing.Size(41, 12);
-            this.cipher.TabIndex = 4;
-            this.cipher.Text = "소숫점";
-            // 
-            // cipherTxt
-            // 
-            this.cipherTxt.Location = new System.Drawing.Point(302, 20);
-            this.cipherTxt.Name = "cipherTxt";
-            this.cipherTxt.Size = new System.Drawing.Size(80, 21);
-            this.cipherTxt.TabIndex = 5;
-            this.cipherTxt.Text = "4";
-            // 
             // PercentCalc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -424,8 +404,6 @@
         private System.Windows.Forms.Button tagCopyBtn;
         private System.Windows.Forms.TextBox tagSource;
         private System.Windows.Forms.Button makeTagBtn;
-        private System.Windows.Forms.Label cipher;
-        private System.Windows.Forms.TextBox cipherTxt;
     }
 }
 

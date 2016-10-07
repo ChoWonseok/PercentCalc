@@ -66,30 +66,6 @@ namespace PercentCalc
             return strTag;
         }
 
-        private int getCipher()
-        {
-            int iCipher = digitValidation(cipherTxt.Text) == 0 ? 4 : digitValidation(cipherTxt.Text);
-            return iCipher;
-        }
-
-
-        private void c1_calc(object sender, EventArgs e)
-        {
-
-            int iTotalWidth = digitValidation(totalWidth.Text);
-            int iWidth = digitValidation(width.Text);
-
-            float[] iResultData = { 0, 0 };
-
-            iResultData = calcPercent(iWidth, iTotalWidth);
-
-            if (iResultData[0] > 0 && iResultData[1] > 0)
-            {
-                widthCal.Text = iResultData[0].ToString();
-                widthPercent.Text = Math.Round(iResultData[1], getCipher()).ToString();
-            }
-        }
-
         private void c2_calc(object sender, EventArgs e)
         {
             int iTotalHeight = digitValidation(totalHeight.Text);
@@ -102,7 +78,7 @@ namespace PercentCalc
             if (iResultData[0] > 0 && iResultData[1] > 0)
             {
                 heightCal.Text = iResultData[0].ToString();
-                heightPercent.Text = Math.Round(iResultData[1], getCipher()).ToString();
+                heightPercent.Text = iResultData[1].ToString();
             }
         }
 
@@ -118,7 +94,7 @@ namespace PercentCalc
             if (iResultData[0] > 0 && iResultData[1] > 0)
             {
                 topCal.Text = iResultData[0].ToString();
-                topPercent.Text = Math.Round(iResultData[1], getCipher()).ToString();
+                topPercent.Text = iResultData[1].ToString();
             }
         }
 
@@ -134,7 +110,7 @@ namespace PercentCalc
             if (iResultData[0] > 0 && iResultData[1] > 0)
             {
                 leftCal.Text = iResultData[0].ToString();
-                leftPercent.Text = Math.Round(iResultData[1], getCipher()).ToString();
+                leftPercent.Text = iResultData[1].ToString();
             }
         }
 
@@ -199,6 +175,23 @@ namespace PercentCalc
             if (e.KeyCode == Keys.Enter)
             {
                 C4.PerformClick();
+            }
+        }
+
+        private void c1_calc(object sender, EventArgs e)
+        {
+
+            int iTotalWidth = digitValidation(totalWidth.Text);
+            int iWidth = digitValidation(width.Text);
+
+            float[] iResultData = { 0, 0 };
+
+            iResultData = calcPercent(iWidth, iTotalWidth);
+
+            if (iResultData[0] > 0 && iResultData[1] > 0)
+            {
+                widthCal.Text = iResultData[0].ToString();
+                widthPercent.Text = iResultData[1].ToString();
             }
         }
 

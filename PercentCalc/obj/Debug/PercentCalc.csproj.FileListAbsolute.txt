@@ -28,3 +28,9 @@ E:\source\vc\PercentCalc\PercentCalc\obj\Debug\PercentCalc.PercentCalc.resources
 D:\Programing\ricemen\PercentCalc\PercentCalc\bin\Debug\PercentCalc.exe.config
 D:\Programing\ricemen\PercentCalc\PercentCalc\obj\Debug\PercentCalc.exe
 D:\Programing\ricemen\PercentCalc\PercentCalc\obj\Debug\PercentCalc.pdb
+D:\Programing\ricemen\PercentCalc\PercentCalc\bin\Debug\PercentCalc.exe
+D:\Programing\ricemen\PercentCalc\PercentCalc\bin\Debug\PercentCalc.pdb
+D:\Programing\ricemen\PercentCalc\PercentCalc\obj\Debug\PercentCalc.csprojResolveAssemblyReference.cache
+D:\Programing\ricemen\PercentCalc\PercentCalc\obj\Debug\PercentCalc.PercentCalc.resources
+D:\Programing\ricemen\PercentCalc\PercentCalc\obj\Debug\PercentCalc.Properties.Resources.resources
+D:\Programing\ricemen\PercentCalc\PercentCalc\obj\Debug\PercentCalc.csproj.GenerateResource.Cache

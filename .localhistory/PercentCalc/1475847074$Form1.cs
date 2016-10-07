@@ -66,16 +66,8 @@ namespace PercentCalc
             return strTag;
         }
 
-        private int getCipher()
+        private void c1_calc(object sender, MouseEventArgs e)
         {
-            int iCipher = digitValidation(cipherTxt.Text) == 0 ? 4 : digitValidation(cipherTxt.Text);
-            return iCipher;
-        }
-
-
-        private void c1_calc(object sender, EventArgs e)
-        {
-
             int iTotalWidth = digitValidation(totalWidth.Text);
             int iWidth = digitValidation(width.Text);
 
@@ -86,7 +78,7 @@ namespace PercentCalc
             if (iResultData[0] > 0 && iResultData[1] > 0)
             {
                 widthCal.Text = iResultData[0].ToString();
-                widthPercent.Text = Math.Round(iResultData[1], getCipher()).ToString();
+                widthPercent.Text = iResultData[1].ToString();
             }
         }
 
@@ -102,7 +94,7 @@ namespace PercentCalc
             if (iResultData[0] > 0 && iResultData[1] > 0)
             {
                 heightCal.Text = iResultData[0].ToString();
-                heightPercent.Text = Math.Round(iResultData[1], getCipher()).ToString();
+                heightPercent.Text = iResultData[1].ToString();
             }
         }
 
@@ -118,7 +110,7 @@ namespace PercentCalc
             if (iResultData[0] > 0 && iResultData[1] > 0)
             {
                 topCal.Text = iResultData[0].ToString();
-                topPercent.Text = Math.Round(iResultData[1], getCipher()).ToString();
+                topPercent.Text = iResultData[1].ToString();
             }
         }
 
@@ -134,7 +126,7 @@ namespace PercentCalc
             if (iResultData[0] > 0 && iResultData[1] > 0)
             {
                 leftCal.Text = iResultData[0].ToString();
-                leftPercent.Text = Math.Round(iResultData[1], getCipher()).ToString();
+                leftPercent.Text = iResultData[1].ToString();
             }
         }
 
@@ -170,37 +162,10 @@ namespace PercentCalc
         private void width_keyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
-            {
+            {                
                 C1.PerformClick();
                 height.Focus();
             }
         }
-
-        private void height_keyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                C2.PerformClick();
-                top.Focus();
-            }
-        }
-
-        private void top_keyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                C3.PerformClick();
-                left.Focus();
-            }
-        }
-
-        private void left_keyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                C4.PerformClick();
-            }
-        }
-
     }
 }
